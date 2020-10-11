@@ -30,6 +30,8 @@ echo "build completed ..."
 echo http://localhost:8000/demo-slides.html
 echo "Starting Webserver on :8000"
 python3 -m http.server --directory $BUILD_DIR >/dev/null 2>&1 &
+ps aux | grep http.server
+echo "kill -9 <pid>" to shut down the webserver
 
 #open -a Google\ Chrome http://localhost:8000/demo-slides.html > /dev/null &
 
