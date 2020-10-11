@@ -1,5 +1,5 @@
 set -e
-BUILD_DIR="build-slides-revealjs"
+BUILD_DIR="gh-pages"
 REVEAL_DIR="asciidocs-slides"
 [ ! -d "./asciidocs-slides/revealjs" ] && source ./download-reveal.sh
 rm -rf -v $BUILD_DIR # else plantuml diagrams won't be rebuilt
