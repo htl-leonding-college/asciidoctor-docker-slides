@@ -2,7 +2,10 @@
 
 create asciidoctor slides w/o installing any software on your computer besides docker
 
-https://github.com/htl-leonding-college/asciidoctor-docker-slides
+* github-repo: https://github.com/htl-leonding-college/asciidoctor-docker-slides
+* Demo from bentolor hosted in gh-pages of this repo: https://htl-leonding-college.github.io/asciidoctor-docker-slides/docs/presentation.html
+* Simple Demo, also hosted in the gh-pages of this repo: https://htl-leonding-college.github.io/asciidoctor-docker-slides/demo-slides.html
+
 
 ##  Use Case
 
