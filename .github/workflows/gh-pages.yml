@@ -38,7 +38,7 @@ jobs:
           #asciidoctor_params: --attribute=nofooter
           #pdf_build: true
           slides_build: true
-          slides_main_adoc_file: index
+          slides_main_adoc_file: asciidocs-slides/index
           slides_skip_asciidoctor_build: true
           
           
