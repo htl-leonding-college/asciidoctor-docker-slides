@@ -40,7 +40,7 @@ jobs:
           asciidoctor_params: -r asciidoctor-diagram -a icons=font \
             -a revealjs_theme=white \
             -a source-highlighter=rouge \
-            -a imagesdir=images \ # -a revealjsdir=revealjs \
+            -a imagesdir=images \
             -a revealjs_slideNumber=c/t \
             -a revealjs_transition=slide \
             -a revealjs_hash=true \
