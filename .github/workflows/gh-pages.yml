@@ -37,15 +37,7 @@ jobs:
         uses: manoelcampos/asciidoctor-ghpages-action@v2
         with:
           #asciidoctor_params: --attribute=nofooter
-          asciidoctor_params: -r asciidoctor-diagram -a icons=font \
-            -a revealjs_theme=white \
-            -a source-highlighter=rouge \
-            -a imagesdir=images \
-            -a revealjs_slideNumber=c/t \
-            -a revealjs_transition=slide \
-            -a revealjs_hash=true \
-            -a sourcedir=src/main/java \
-            -b revealjs \
+          asciidoctor_params: -r asciidoctor-diagram -a icons=font -a revealjs_theme=white -a source-highlighter=rouge -a imagesdir=images -a revealjs_slideNumber=c/t -a revealjs_transition=slide -a revealjs_hash=true -a sourcedir=src/main/java
           #pdf_build: true
           slides_build: true
           slides_main_adoc_file: asciidocs-slides/index
