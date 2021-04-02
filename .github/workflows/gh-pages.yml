@@ -25,17 +25,28 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      #- name: Deploy 🚀
+      #- name: Deploy to github 🚀
       #  uses: JamesIves/github-pages-deploy-action@4.1.0
       #  with:
       #    branch: gh-pages # The branch the action should deploy to.
       #    folder: build # The folder the action should deploy.
 
       # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
+      # https://github.com/manoelcampos/asciidoctor-ghpages-action/blob/main/.github/workflows/asciidoctor-ghpages.yml
       - name: asciidoctor-ghpages
         uses: manoelcampos/asciidoctor-ghpages-action@v2
         with:
           #asciidoctor_params: --attribute=nofooter
+          asciidoctor_params: -r asciidoctor-diagram -a icons=font \
+            -a revealjs_theme=white \
+            -a source-highlighter=rouge \
+            -a imagesdir=images \
+            # -a revealjsdir=revealjs \
+            -a revealjs_slideNumber=c/t \
+            -a revealjs_transition=slide \
+            -a revealjs_hash=true \
+            -a sourcedir=src/main/java \
+            -b revealjs \
           #pdf_build: true
           slides_build: true
           slides_main_adoc_file: asciidocs-slides/index
